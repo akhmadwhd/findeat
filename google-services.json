@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "446195739309",
+    "project_id": "findeat-a0d20",
+    "storage_bucket": "findeat-a0d20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446195739309:android:d0d736ea262cad294a3424",
+        "android_client_info": {
+          "package_name": "com.example.findeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446195739309-h7fcvfvkb7ih4f173b0pansl9pqu18q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCInB5EYJT77z9e_HNdmoo-XFR2IPq3oDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446195739309-h7fcvfvkb7ih4f173b0pansl9pqu18q1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
