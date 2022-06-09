@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": " Ramen Ya!",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav1.png",
+    "price": "Start From Rp.20.000",
+    "Lokasi": "Jalan Telekomunikasi"
+  },
+  {
+    "id": 1,
+    "name": " Sei Sapi",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav2.png",
+    "price": "Start From Rp.30.000",
+    "Lokasi": "Jalan Telekomunikasi No.2"
+  },
+  {
+    "id": 2,
+    "name": " Ambrogio",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 3"
+  }
+]

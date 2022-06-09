@@ -35,11 +35,17 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   firebase_core: ^1.17.1
+  google_fonts: ^2.3.1
+  sizer: ^2.0.15
+  build_runner: ^2.0.0
 
 dev_dependencies:
+  json_model: ^1.0.0
+  json_serializable: ^5.0.0
   flutter_test:
     sdk: flutter
   firebase_auth: ^1.1.1
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -53,8 +59,19 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
+    - assets/jsonfile/
     - assets/images/splash.png
+    - assets/images/location.png
+    - assets/images/collec1.png
+    - assets/images/collec2.png
+    - assets/images/collec3.png
+    - assets/images/fav1.png
+    - assets/images/fav2.png
+    - assets/images/fav3.png
   fonts:
+    - family: Moul
+      fonts:
+        - asset: assets/fonts/Moul-Regular.ttf
     - family: Lato
       fonts:
         - asset: assets/fonts/Lato-Regular.ttf
@@ -63,6 +80,7 @@ flutter:
           weight: 600
         - asset: assets/fonts/Lato-Bold.ttf
           weight: 700
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
