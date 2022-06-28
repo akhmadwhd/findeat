@@ -6,6 +6,9 @@ Color textBlack = Color(0xff222222);
 Color textGrey = Color(0xff94959b);
 Color textWhiteGrey = Color(0xfff1f1f5);
 
+TextStyle blackTextStyle = TextStyle(
+  fontWeight: FontWeight.w500,
+);
 TextStyle heading2 = TextStyle(
   fontSize: 24,
   fontWeight: FontWeight.w700,

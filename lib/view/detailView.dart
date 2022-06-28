@@ -1,5 +1,8 @@
+import 'package:findeat/view/review_view.dart';
 import 'package:flutter/material.dart';
 import 'package:findeat/model/restaurantModel.dart';
+import 'package:findeat/theme.dart';
+import 'package:findeat/view/maps_view.dart';
 
 class DetailView extends StatelessWidget {
   const DetailView({Key? key, required this.product}) : super(key: key);
@@ -53,6 +56,49 @@ class DetailView extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(height: 48,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                color: Colors.black54,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MyApp(),
+                    ),
+                  );
+                },
+                child: Text(
+                    'Lokasi',
+                    style: heading5.copyWith(color: Colors.white)
+                ),
+              ),
+              RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                color: Colors.black54,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TestMe(),
+                    ),
+                  );
+                },
+                child: Text(
+                    'Review',
+                    style: heading5.copyWith(color: Colors.white)
+                ),
+              ),
+
+            ],
+          )
 
 
         ]));

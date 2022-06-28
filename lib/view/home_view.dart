@@ -6,6 +6,8 @@ import 'package:findeat/model/restaurantModel.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' as rootBundle;
 import 'package:findeat/view/detailView.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -44,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   final pages = [
     Page1(),
     const Page2(),
-    const Page3(),
+    Page3(),
   ];
 
   @override
@@ -228,7 +230,7 @@ class Page1 extends StatelessWidget {
   }
   Future<List<ProductDataModel>> ReadJsonData() async {
     final jsondata =
-    await rootBundle.rootBundle.loadString('jsonfile/restaurant.json');
+    await rootBundle.rootBundle.loadString('assets/jsonfile/restaurant.json');
     final list = json.decode(jsondata) as List<dynamic>;
     return list.map((e) => ProductDataModel.fromJson(e)).toList();
   }
@@ -242,31 +244,26 @@ class Page2 extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: const Color(0xffEEEDDE),
+      appBar: AppBar(
+        title: Text(
+          "Collection",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 25,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
+        backgroundColor: Color(0x44000000),
+      ),
       body: Column(
         children: [
-          Row(
-            children: [
-              SizedBox(width: 14),
-              Text('Collection',style: TextStyle(
-                fontFamily: 'Moul',
-                fontSize: 25,
-                color: Colors.black,
-              ),
-              ),
-              SizedBox(
-                  width: 137
-              ),
-              Icon(
-                Icons.account_circle_outlined,
-                size: 32,
-              ),
-            ],
-          ),
           SizedBox(
-            height: 2,
+            height: 10,
           ),
           Container(
-            alignment: Alignment.centerLeft,
+            alignment: Alignment.center,
             margin: EdgeInsets.only(left: 15),
             child:
             Text(
@@ -422,99 +419,98 @@ class Page2 extends StatelessWidget {
 }
 
 class Page3 extends StatelessWidget {
-  const Page3({Key? key}) : super(key: key);
+  Page3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(24, 40, 24, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SizedBox(height: 20,),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/images/splash.png',
-                  )
-                ],
-              ),
-              SizedBox(height: 90,),
-              Form(
-                  child: Column(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                            color: textWhiteGrey,
-                            borderRadius: BorderRadius.circular(14)
-                        ),
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                              hintText: 'Nama',
-                              hintStyle: heading6.copyWith(color: textGrey),
-                              border: OutlineInputBorder(borderSide: BorderSide.none)
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 32,),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: textWhiteGrey,
-                            borderRadius: BorderRadius.circular(14)
-                        ),
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                              hintText: 'Email',
-                              hintStyle: heading6.copyWith(color: textGrey),
-                              border: OutlineInputBorder(borderSide: BorderSide.none)
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 32,),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: textWhiteGrey,
-                            borderRadius: BorderRadius.circular(14)
-                        ),
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                              hintText: 'Password',
-                              hintStyle: heading6.copyWith(color: textGrey),
-                              border: OutlineInputBorder(borderSide: BorderSide.none)
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
-              ),
-              SizedBox(height: 32,),
-              Container(
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LoginPage(),
-                      ),
-                    );
-                  },
-                  child: Text(
-                      'Log Out',
-                      style: heading5.copyWith(color: Colors.red)
-                  ),
-                ),
-              ),
-            ],
+      backgroundColor: const Color(0xffEEEDDE),
+      appBar: AppBar(
+        title: Text(
+          "Account",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 25,
+            fontWeight: FontWeight.w600,
           ),
         ),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
+        backgroundColor: Color(0x44000000),
       ),
+      body: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(
+                width: 5,
+                height: 88,
+              ),
+              SizedBox(
+                width: 5,
+                height: 40,
+              ),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('assets/Profile.jpeg'),
+              ),
+              SizedBox(
+                width: 5,
+                height: 14,
+              ),
+              Text(
+                'User 01',
+                style: blackTextStyle.copyWith(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              SizedBox(
+                width: 5,
+                height: 4,
+              ),
+              Text(
+                'Verified User',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              SizedBox(
+                width: 10,
+                height: 20,
+              ),
+              Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+                  child: OutlinedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPage(),
+                        ),
+                      );
+                    },
+                    style: OutlinedButton.styleFrom(
+                      fixedSize: const Size(320, 48),
+                    ),
+                    icon: Icon(
+                      Icons.logout,
+                      size: 20,
+                      color: Colors.grey,
+                    ),
+                    label: Text(
+                      "Logout",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  )),
+
+            ],
+          )),
     );
   }
 }

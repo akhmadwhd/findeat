@@ -49,22 +49,6 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                           child: TextFormField(
                             decoration: InputDecoration(
-                                hintText: 'Name',
-                                hintStyle: heading6.copyWith(color: textGrey),
-                                border: OutlineInputBorder(
-                                    borderSide: BorderSide.none
-                                )
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: 32,),
-                        Container(
-                          decoration: BoxDecoration(
-                              color: textWhiteGrey,
-                              borderRadius: BorderRadius.circular(14)
-                          ),
-                          child: TextFormField(
-                            decoration: InputDecoration(
                                 hintText: 'Email',
                                 hintStyle: heading6.copyWith(color: textGrey),
                                 border: OutlineInputBorder(
@@ -138,7 +122,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       );
                     },
                     child: Text(
-                      'Register',
+                        'Register',
                         style: heading5.copyWith(color: Colors.white)
                     ),
                   ),

@@ -21,6 +21,62 @@
     "category": "Popular",
     "imageUrl": "assets/images/fav3.png",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 3"
+    "Lokasi": "Jalan Telekomunikasi No. 5"
+  },
+  {
+    "id": 3,
+    "name": " Sudut",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 12"
+  },
+  {
+    "id": 4,
+    "name": " McD",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 16"
+  },
+  {
+    "id": 5,
+    "name": " KFC",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 19"
+  },
+  {
+    "id": 6,
+    "name": " Pizza Hut",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 10"
+  },
+  {
+    "id": 7,
+    "name": " Munjul",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 33"
+  },
+  {
+    "id": 8,
+    "name": " Burjo",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 23"
+  },
+  {
+    "id": 9,
+    "name": " Angkringan",
+    "category": "Popular",
+    "imageUrl": "assets/images/fav3.png",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Jalan Telekomunikasi No. 36"
   }
 ]
