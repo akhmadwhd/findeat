@@ -1,4 +1,3 @@
-import 'package:findeat/view/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:findeat/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,6 +6,8 @@ import 'dart:convert';
 import 'package:flutter/services.dart' as rootBundle;
 import 'package:findeat/view/detailView.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
+late User loggedinUser;
 
 void main() {
   runApp(const MyApp());
@@ -40,12 +41,29 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _auth = FirebaseAuth.instance;
+  void initState() {
+    super.initState();
+    getCurrentUser();
+  }
 
+  //using this function you can use the credentials of the user
+
+  void getCurrentUser() async {
+    try {
+      final user = await _auth.currentUser;
+      if (user != null) {
+        loggedinUser = user;
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
   int pageIndex = 0;
 
   final pages = [
     Page1(),
-    const Page2(),
+    Page2(),
     Page3(),
   ];
 
@@ -237,7 +255,7 @@ class Page1 extends StatelessWidget {
 }
 
 class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
+  Page2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -289,11 +307,12 @@ class Page2 extends StatelessWidget {
                         width: 150,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color(0xffEEEDDE)),
                         child: Stack(
+
                           children:[
                             Image.asset('assets/images/collec1.png'),
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
-                              child: Text('Popular This Week \n 21 Places >',
+                              child: Text('Popular This Week >',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
                                     fontSize: 8,
@@ -317,7 +336,7 @@ class Page2 extends StatelessWidget {
                             Image.asset('assets/images/collec2.png'),
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
-                              child: Text('5 Popular Cafe \n 14 Places >',
+                              child: Text('Popular Cafe >',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
                                     fontSize: 8,
@@ -352,7 +371,7 @@ class Page2 extends StatelessWidget {
                             Image.asset('assets/images/collec2.png'),
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
-                              child: Text('Best Cheap Ramen \n 10 Places >',
+                              child: Text('Best Cheap Restaurant  >',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
                                     fontSize: 8,
@@ -371,11 +390,13 @@ class Page2 extends StatelessWidget {
                     child: Container(
                         width: 150,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color(0xffEEEDDE)),
+
                         child: Stack(
                           children:[
                             Image.asset('assets/images/collec3.png'),
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
+
                               child: Text('Best Coffe at Town \n 13 Places >',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
@@ -420,7 +441,7 @@ class Page2 extends StatelessWidget {
 
 class Page3 extends StatelessWidget {
   Page3({Key? key}) : super(key: key);
-
+  final _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -484,12 +505,8 @@ class Page3 extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
                   child: OutlinedButton.icon(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginPage(),
-                        ),
-                      );
+                      _auth.signOut();
+                      Navigator.pop(context);
                     },
                     style: OutlinedButton.styleFrom(
                       fixedSize: const Size(320, 48),

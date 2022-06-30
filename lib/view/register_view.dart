@@ -1,6 +1,7 @@
 import 'package:findeat/view/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:findeat/theme.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 
 class RegisterPage extends StatefulWidget {
@@ -11,6 +12,9 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  final _auth = FirebaseAuth.instance;
+  late String email;
+  late String password;
   bool passwordVisible = false;
   bool passwordConfirmVisible = false;
   void togglePassword() {
@@ -48,6 +52,11 @@ class _RegisterPageState extends State<RegisterPage> {
                               borderRadius: BorderRadius.circular(14)
                           ),
                           child: TextFormField(
+                            keyboardType: TextInputType.emailAddress,
+                            onChanged: (value) {
+                              email = value;
+                              //Do something with the user input.
+                            },
                             decoration: InputDecoration(
                                 hintText: 'Email',
                                 hintStyle: heading6.copyWith(color: textGrey),
@@ -64,6 +73,10 @@ class _RegisterPageState extends State<RegisterPage> {
                               borderRadius: BorderRadius.circular(14)
                           ),
                           child: TextFormField(
+                            onChanged: (value) {
+                              password = value;
+                              //Do something with the user input.
+                            },
                             obscureText: !passwordVisible,
                             decoration: InputDecoration(
                                 hintText: 'Password',
@@ -113,13 +126,22 @@ class _RegisterPageState extends State<RegisterPage> {
                       borderRadius: BorderRadius.circular(14),
                     ),
                     color: Colors.black54,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginPage(),
-                        ),
-                      );
+                    onPressed: () async{
+                      try {
+                        final newUser = await _auth.createUserWithEmailAndPassword(
+                            email: email, password: password);
+                      if (newUser != null) {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()
+                            )
+                        );
+                      }
+                      } catch (e) {
+                        print(e);
+                      }
+
                     },
                     child: Text(
                         'Register',

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "446195739309",
-    "project_id": "findeat-a0d20",
-    "storage_bucket": "findeat-a0d20.appspot.com"
+    "project_number": "951824373277",
+    "project_id": "findeat-1ae11",
+    "storage_bucket": "findeat-1ae11.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:446195739309:android:d0d736ea262cad294a3424",
+        "mobilesdk_app_id": "1:951824373277:android:ca1c7b380f2418546258f4",
         "android_client_info": {
           "package_name": "com.example.findeat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "446195739309-h7fcvfvkb7ih4f173b0pansl9pqu18q1.apps.googleusercontent.com",
+          "client_id": "951824373277-35kk53jj1qn9i7jaa776i3qcese49acn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCInB5EYJT77z9e_HNdmoo-XFR2IPq3oDI"
+          "current_key": "AIzaSyB5ID114uZGIaO2-chYNnQLeb1G03BgbbU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "446195739309-h7fcvfvkb7ih4f173b0pansl9pqu18q1.apps.googleusercontent.com",
+              "client_id": "951824373277-35kk53jj1qn9i7jaa776i3qcese49acn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

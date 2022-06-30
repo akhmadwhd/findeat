@@ -7,6 +7,7 @@ class ProductDataModel {
   String? imageURL;
   String? Lokasi ;
   String? price ;
+  String? MenuUrl;
 
 // constructor
   ProductDataModel(
@@ -15,7 +16,9 @@ class ProductDataModel {
         this.category,
         this.imageURL,
         this.Lokasi ,
-        this.price });
+        this.price,
+        this.MenuUrl
+      });
 
   //method that assign values to respective datatype vairables
   ProductDataModel.fromJson(Map<String, dynamic> json) {
@@ -25,5 +28,6 @@ class ProductDataModel {
     imageURL = json['imageUrl'];
     Lokasi  = json['Lokasi'];
     price  = json['price'];
+    MenuUrl = json['MenuUrl'];
   }
 }

@@ -1,38 +1,35 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+class HomePage extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _MyAppState extends State<MyApp> {
-  late GoogleMapController mapController;
+class _HomePageState extends State<HomePage> {
+  Completer<GoogleMapController> _controller = Completer();
 
-  final LatLng _center = const LatLng(45.521563, -122.677433);
-
-  void _onMapCreated(GoogleMapController controller) {
-    mapController = controller;
-  }
+  CameraPosition _currentPosition = CameraPosition(
+    target: LatLng(13.0827, 80.2707),
+    zoom: 12,
+  );
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Restaurant Location'),
-          backgroundColor: Colors.green[700],
-        ),
-        body: GoogleMap(
-          onMapCreated: _onMapCreated,
-          initialCameraPosition: CameraPosition(
-            target: _center,
-            zoom: 11.0,
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Google Maps"),
+      ),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        child: GoogleMap(
+          initialCameraPosition: _currentPosition,
+          onMapCreated: (GoogleMapController controller) {
+            _controller.complete();
+          },
         ),
       ),
     );

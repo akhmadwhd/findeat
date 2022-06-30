@@ -12,6 +12,7 @@ class DetailView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         appBar: AppBar(
           title: Text(
             "Restaurant Profile",
@@ -24,6 +25,7 @@ class DetailView extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.black54,
         ),
+
         body: Column(children: [
           Image.network(
             product.imageURL.toString(),
@@ -56,7 +58,20 @@ class DetailView extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 48,),
+          SizedBox(height: 15,),
+          Text(
+            "Menu Makanan",
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 10,),
+          Image.network(
+            product.MenuUrl.toString(),
+            fit: BoxFit.fill,
+          ),
+          SizedBox(height: 5,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -69,7 +84,7 @@ class DetailView extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => MyApp(),
+                      builder: (context) => HomePage(),
                     ),
                   );
                 },
@@ -78,6 +93,7 @@ class DetailView extends StatelessWidget {
                     style: heading5.copyWith(color: Colors.white)
                 ),
               ),
+              SizedBox(height: 10,),
               RaisedButton(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -99,6 +115,8 @@ class DetailView extends StatelessWidget {
 
             ],
           )
+
+
 
 
         ]));

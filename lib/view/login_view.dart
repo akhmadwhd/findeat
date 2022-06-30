@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:findeat/view/register_view.dart';
 import 'package:findeat/view/home_view.dart';
 import 'package:findeat/theme.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({ Key? key }) : super(key: key);
@@ -9,8 +10,10 @@ class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
 }
-
+final _auth = FirebaseAuth.instance;
 class _LoginPageState extends State<LoginPage> {
+  late String email;
+  late String password;
   bool passwordVisible = false;
   void togglePassword() {
     setState(() {
@@ -47,6 +50,11 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(14)
                         ),
                         child: TextFormField(
+                          keyboardType: TextInputType.emailAddress,
+                          onChanged: (value) {
+                            email = value;
+                            //Do something with the user input.
+                          },
                           decoration: InputDecoration(
                               hintText: 'Email',
                               hintStyle: heading6.copyWith(color: textGrey),
@@ -61,6 +69,10 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(14)
                         ),
                         child: TextFormField(
+                          onChanged: (value) {
+                            password = value;
+                            //Do something with the user input.
+                          },
                           obscureText: !passwordVisible,
                           decoration: InputDecoration(
                               hintText: 'Password',
@@ -87,13 +99,22 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(14),
                   ),
                   color: Colors.black54,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HomePage(),
-                      ),
-                    );
+                  onPressed: () async{
+                    try {
+                      final user = await _auth.signInWithEmailAndPassword(
+                          email: email, password: password);
+                      if (user != null) {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePage()
+                            )
+                        );
+                      }
+                    } catch (e) {
+                      print(e);
+                    }
+
                   },
                   child: Text(
                       'Login',

@@ -3,80 +3,90 @@
     "id": 0,
     "name": " Ramen Ya!",
     "category": "Popular",
-    "imageUrl": "assets/images/fav1.png",
+    "imageUrl": "https://img.beritasatu.com/cache/beritasatu/910x580-2/1645886167.jpg",
     "price": "Start From Rp.20.000",
-    "Lokasi": "Jalan Telekomunikasi"
+    "Lokasi": "Buah Batu",
+    "MenuUrl": "https://assets-pergikuliner.com/hOxhXxihbauUdZ6l4djnac078hU=/945x0/smart/filters:watermark(https://assets-pergikuliner.com/assets/pegimakan-logo-3e147c56e232f471596371920946ae65.png,-0,-3,10):no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2190398/picture-1617727195.jpg"
   },
   {
     "id": 1,
     "name": " Sei Sapi",
     "category": "Popular",
-    "imageUrl": "assets/images/fav2.png",
+    "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2019/07/25/8b649994-1d5b-4f90-be2b-3b61c58541ac.jpeg?w=700&q=90",
     "price": "Start From Rp.30.000",
-    "Lokasi": "Jalan Telekomunikasi No.2"
+    "Lokasi": "Dago",
+    "MenuUrl": "https://assets-pergikuliner.com/yIcEJodlN0w56ysXzBL8sJXGreU=/945x0/smart/filters:watermark(https://assets-pergikuliner.com/assets/pegimakan-logo-3e147c56e232f471596371920946ae65.png,-0,-3,10):no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2257163/picture-1624506369.jpg"
   },
   {
     "id": 2,
     "name": " Ambrogio",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://farm2.staticflickr.com/1888/43997547994_8a42b89a1b_o.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 5"
+    "Lokasi": "Riau",
+    "MenuUrl": "https://farm2.staticflickr.com/1851/44666327282_ca03018175_o.jpg"
   },
   {
     "id": 3,
-    "name": " Sudut",
+    "name": " Kenhotbar",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://t-2.tstatic.net/tribunjabartravel/foto/bank/images/Kuliner-Lengkong-Kecil-03.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 12"
+    "Lokasi": "Lengkong",
+    "MenuUrl": "https://assets-pergikuliner.com/MaO6qzmSst3YaEzC9-V4DVPK8v4=/945x0/smart/filters:watermark(https://assets-pergikuliner.com/assets/pegimakan-logo-3e147c56e232f471596371920946ae65.png,-0,-3,10):no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2195744/picture-1618296267.jpg"
   },
   {
     "id": 4,
     "name": " McD",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "http://redaksi.waspada.co.id/v2021/jabar/wp-content/uploads/sites/4/2021/06/ALVIN-3-1-1-600x375.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 16"
+    "Lokasi": "Dago",
+    "MenuUrl": "https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/cul-assets-252301483284-b172d73b6c43cddb/culinary/asset/REST_IMG-1021x720-FIT_AND_TRIM-56c584969f277c13425a532ccf1a9d8e.jpeg?tr=q-40,c-at_max,w-1080,h-1920&amp;_src=imagekit"
   },
   {
     "id": 5,
     "name": " KFC",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1b/99/44/8e/kfc-faxafeni.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 19"
+    "Lokasi": "Buah Batu",
+    "MenuUrl": "https://t-2.tstatic.net/palembang/foto/bank/images/promo-kfc-menu-kombo.jpg"
   },
   {
     "id": 6,
     "name": " Pizza Hut",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://pizzahutnearme.net/storage/pizza-hut-restoran-jalan-buah-batu-no137-turangga-618d30004a453.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 10"
+    "Lokasi": "Lengkong",
+    "MenuUrl": "https://cdn-2.tstatic.net/pontianak/foto/bank/images/update-promo-pizza-hut-hari-ini-25-desember.jpg"
   },
   {
     "id": 7,
-    "name": " Munjul",
+    "name": " Conffe On",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://telisik.id/assets/img/news/2020/07/coffee_on_the_bus_cara_baru_ngopi_sambil_keliling_kota_yogyakarta.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 33"
+    "Lokasi": "Riau",
+    "MenuUrl": "https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/cul-assets-252301483284-b172d73b6c43cddb/culinary/asset/REST_IMG-1003x720-FIT_AND_TRIM-5e5343b5bf75a08f1bf1bc5b01ef6692.jpeg?tr=q-40,c-at_max,w-1080,h-1920&amp;_src=imagekit"
   },
   {
     "id": 8,
     "name": " Burjo",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://t-2.tstatic.net/tribunjogjatravel/foto/bank/images/warung-burjo-di-jogja.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 23"
+    "Lokasi": "Riau",
+    "MenuUrl": "https://scontent.fupg6-1.fna.fbcdn.net/v/t1.6435-9/196171378_775698663142918_8474106284507163199_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=973b4a&_nc_ohc=NUzQUzWHTIkAX-Ae0mg&_nc_ht=scontent.fupg6-1.fna&oh=00_AT9Kw16aMS0Ib14X5C5InFRPrJdFtv6BWSGxTupOvG5y5w&oe=62E2C1E0"
   },
   {
     "id": 9,
     "name": " Angkringan",
     "category": "Popular",
-    "imageUrl": "assets/images/fav3.png",
+    "imageUrl": "https://cdn-image.hipwee.com/wp-content/uploads/2020/01/hipwee-angkringan-pak-jack_.jpg",
     "price": "Start From Rp.15.000",
-    "Lokasi": "Jalan Telekomunikasi No. 36"
+    "Lokasi": "Buah Batu",
+    "MenuUrl": "https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/cul-assets-252301483284-b172d73b6c43cddb/culinary/asset/REST_IMG-1067x720-FIT_AND_TRIM-26e9f47f622dcc41869d9b8bb649039b.jpeg"
   }
 ]
