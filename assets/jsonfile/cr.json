@@ -1,0 +1,20 @@
+[
+  {
+    "id": 8,
+    "name": " Burjo",
+    "category": "Popular Cheap Restaurant",
+    "imageUrl": "https://t-2.tstatic.net/tribunjogjatravel/foto/bank/images/warung-burjo-di-jogja.jpg",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Riau",
+    "MenuUrl": "https://scontent.fupg6-1.fna.fbcdn.net/v/t1.6435-9/196171378_775698663142918_8474106284507163199_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=973b4a&_nc_ohc=NUzQUzWHTIkAX-Ae0mg&_nc_ht=scontent.fupg6-1.fna&oh=00_AT9Kw16aMS0Ib14X5C5InFRPrJdFtv6BWSGxTupOvG5y5w&oe=62E2C1E0"
+  },
+  {
+    "id": 9,
+    "name": " Angkringan",
+    "category": "Popular Cheap Restaurant",
+    "imageUrl": "https://cdn-image.hipwee.com/wp-content/uploads/2020/01/hipwee-angkringan-pak-jack_.jpg",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Buah Batu",
+    "MenuUrl": "https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/cul-assets-252301483284-b172d73b6c43cddb/culinary/asset/REST_IMG-1067x720-FIT_AND_TRIM-26e9f47f622dcc41869d9b8bb649039b.jpeg"
+  }
+]

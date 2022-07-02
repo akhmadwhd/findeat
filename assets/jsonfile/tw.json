@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "name": " Ramen Ya!",
+    "category": "Popular This Week",
+    "imageUrl": "https://img.beritasatu.com/cache/beritasatu/910x580-2/1645886167.jpg",
+    "price": "Start From Rp.20.000",
+    "Lokasi": "Buah Batu",
+    "MenuUrl": "https://assets-pergikuliner.com/hOxhXxihbauUdZ6l4djnac078hU=/945x0/smart/filters:watermark(https://assets-pergikuliner.com/assets/pegimakan-logo-3e147c56e232f471596371920946ae65.png,-0,-3,10):no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2190398/picture-1617727195.jpg"
+  },
+  {
+    "id": 1,
+    "name": " Sei Sapi",
+    "category": "Popular This Week",
+    "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2019/07/25/8b649994-1d5b-4f90-be2b-3b61c58541ac.jpeg?w=700&q=90",
+    "price": "Start From Rp.30.000",
+    "Lokasi": "Dago",
+    "MenuUrl": "https://assets-pergikuliner.com/yIcEJodlN0w56ysXzBL8sJXGreU=/945x0/smart/filters:watermark(https://assets-pergikuliner.com/assets/pegimakan-logo-3e147c56e232f471596371920946ae65.png,-0,-3,10):no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2257163/picture-1624506369.jpg"
+  },
+  {
+    "id": 2,
+    "name": " Ambrogio",
+    "category": "Popular This Week",
+    "imageUrl": "https://farm2.staticflickr.com/1888/43997547994_8a42b89a1b_o.jpg",
+    "price": "Start From Rp.15.000",
+    "Lokasi": "Riau",
+    "MenuUrl": "https://farm2.staticflickr.com/1851/44666327282_ca03018175_o.jpg"
+  }
+]

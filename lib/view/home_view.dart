@@ -6,6 +6,10 @@ import 'dart:convert';
 import 'package:flutter/services.dart' as rootBundle;
 import 'package:findeat/view/detailView.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:findeat/view/popular_cf_View.dart';
+import 'package:findeat/view/popular_cr_view.dart';
+import 'package:findeat/view/popular_ff_View.dart';
+import 'package:findeat/view/popular_tw_View.dart';
 
 late User loggedinUser;
 
@@ -59,6 +63,7 @@ class _HomePageState extends State<HomePage> {
       print(e);
     }
   }
+
   int pageIndex = 0;
 
   final pages = [
@@ -161,7 +166,7 @@ class Page1 extends StatelessWidget {
         backgroundColor: const Color(0xffEEEDDE),
         appBar: AppBar(
           title: Text(
-            "Popular Restaurant",
+            "List Restaurant",
             style: TextStyle(
               color: Colors.white,
               fontSize: 25,
@@ -256,6 +261,8 @@ class Page1 extends StatelessWidget {
 
 class Page2 extends StatelessWidget {
   Page2({Key? key}) : super(key: key);
+  List<String> ItemLokasi = ['Dago','Riau','Lembang','Buah Batu','Lengkong'];
+  String _itemLokasi='Riau';
 
   @override
   Widget build(BuildContext context) {
@@ -277,9 +284,6 @@ class Page2 extends StatelessWidget {
       ),
       body: Column(
         children: [
-          SizedBox(
-            height: 10,
-          ),
           Container(
             alignment: Alignment.center,
             margin: EdgeInsets.only(left: 15),
@@ -303,6 +307,14 @@ class Page2 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 25.0),
                   child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => twPage()
+                          )
+                      );
+                    },
                     child: Container(
                         width: 150,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color(0xffEEEDDE)),
@@ -328,6 +340,14 @@ class Page2 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 1.0),
                   child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => cfPage()
+                          )
+                      );
+                    },
                     child: Container(
                         width: 150,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color(0xffEEEDDE)),
@@ -336,7 +356,7 @@ class Page2 extends StatelessWidget {
                             Image.asset('assets/images/collec2.png'),
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
-                              child: Text('Popular Cafe >',
+                              child: Text('Popular Cafe',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
                                     fontSize: 8,
@@ -363,6 +383,14 @@ class Page2 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 25.0),
                   child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => crPage()
+                          )
+                      );
+                    },
                     child: Container(
                         width: 150,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color(0xffEEEDDE)),
@@ -371,7 +399,7 @@ class Page2 extends StatelessWidget {
                             Image.asset('assets/images/collec2.png'),
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
-                              child: Text('Best Cheap Restaurant  >',
+                              child: Text('Popular Cheap Restaurant ',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
                                     fontSize: 8,
@@ -387,6 +415,14 @@ class Page2 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 1.0),
                   child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => FFPage()
+                          )
+                      );
+                    },
                     child: Container(
                         width: 150,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color(0xffEEEDDE)),
@@ -397,7 +433,7 @@ class Page2 extends StatelessWidget {
                             Positioned.fill(child: Align(
                               alignment: Alignment.bottomLeft,
 
-                              child: Text('Best Coffe at Town \n 13 Places >',
+                              child: Text('Popular FastFood >',
                                 style: TextStyle(
                                     fontFamily: 'Moul',
                                     fontSize: 8,
@@ -413,6 +449,7 @@ class Page2 extends StatelessWidget {
               ],
             ),
           ),
+
 
 
         ],

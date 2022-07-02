@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": " Ramen Ya!",
-    "category": "Popular",
+    "category": "Popular This Week",
     "imageUrl": "https://img.beritasatu.com/cache/beritasatu/910x580-2/1645886167.jpg",
     "price": "Start From Rp.20.000",
     "Lokasi": "Buah Batu",
@@ -11,7 +11,7 @@
   {
     "id": 1,
     "name": " Sei Sapi",
-    "category": "Popular",
+    "category": "Popular This Week",
     "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2019/07/25/8b649994-1d5b-4f90-be2b-3b61c58541ac.jpeg?w=700&q=90",
     "price": "Start From Rp.30.000",
     "Lokasi": "Dago",
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "name": " Ambrogio",
-    "category": "Popular",
+    "category": "Popular This Week",
     "imageUrl": "https://farm2.staticflickr.com/1888/43997547994_8a42b89a1b_o.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Riau",
@@ -29,7 +29,7 @@
   {
     "id": 3,
     "name": " Kenhotbar",
-    "category": "Popular",
+    "category": "Popular FastFood",
     "imageUrl": "https://t-2.tstatic.net/tribunjabartravel/foto/bank/images/Kuliner-Lengkong-Kecil-03.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Lengkong",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": " McD",
-    "category": "Popular",
+    "category": "Popular FastFood",
     "imageUrl": "http://redaksi.waspada.co.id/v2021/jabar/wp-content/uploads/sites/4/2021/06/ALVIN-3-1-1-600x375.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Dago",
@@ -47,7 +47,7 @@
   {
     "id": 5,
     "name": " KFC",
-    "category": "Popular",
+    "category": "Popular FastFood",
     "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1b/99/44/8e/kfc-faxafeni.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Buah Batu",
@@ -56,7 +56,7 @@
   {
     "id": 6,
     "name": " Pizza Hut",
-    "category": "Popular",
+    "category": "Popular FastFood",
     "imageUrl": "https://pizzahutnearme.net/storage/pizza-hut-restoran-jalan-buah-batu-no137-turangga-618d30004a453.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Lengkong",
@@ -64,8 +64,8 @@
   },
   {
     "id": 7,
-    "name": " Conffe On",
-    "category": "Popular",
+    "name": " Coffe On",
+    "category": "Popular Cafe",
     "imageUrl": "https://telisik.id/assets/img/news/2020/07/coffee_on_the_bus_cara_baru_ngopi_sambil_keliling_kota_yogyakarta.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Riau",
@@ -74,7 +74,7 @@
   {
     "id": 8,
     "name": " Burjo",
-    "category": "Popular",
+    "category": "Popular Cheap Restaurant",
     "imageUrl": "https://t-2.tstatic.net/tribunjogjatravel/foto/bank/images/warung-burjo-di-jogja.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Riau",
@@ -83,7 +83,7 @@
   {
     "id": 9,
     "name": " Angkringan",
-    "category": "Popular",
+    "category": "Popular Cheap Restaurant",
     "imageUrl": "https://cdn-image.hipwee.com/wp-content/uploads/2020/01/hipwee-angkringan-pak-jack_.jpg",
     "price": "Start From Rp.15.000",
     "Lokasi": "Buah Batu",
